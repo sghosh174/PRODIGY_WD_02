@@ -1,0 +1,151 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at right, rgb(255, 122, 151) 10%, rgb(255, 255, 255) 70%,rgb(224, 189, 141) 100% );
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.whole
+{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 80px;
+
+}
+.intro
+{
+    max-width: 900px;
+    padding: 1px -10px 1px 1px;
+    margin-right: 40px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.text h1
+{
+    /* padding-bottom: 100px; */
+    font-size: 40px;
+    font-family: "Urbanist", sans-serif;
+    color: #550000;
+}
+.playbutton button
+{
+    border: none;
+    border-radius: 20px;
+    width: 90px;
+    height: 40px;
+    background-color: rgb(121, 103, 77);
+    color: #faf8f8;
+    font-family: 'Fakhwang',sans-serif;
+    font-size: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+.playbutton button:hover
+{
+    color: #000;
+    background-color: lightgoldenrodyellow;
+}
+.playerbox
+{
+    /* size: 100px; */
+    display: flex;
+    flex-direction:row;
+    padding: 30px 30px;
+    margin-bottom: 120px;
+    margin-top: -50px;
+    margin-left: 105px;
+    /* max-width: 100px; */
+}
+/* Styling for the container */
+.playerturn {
+    display: flex;           /* Use flexbox for alignment */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;    
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: -30px;
+    gap: 30px;      
+    padding-left: -10px;         
+    padding: 0px 10px;           /* Padding around the container */
+    border: 2px solid rgb(76, 17, 5); /* Border for the container */
+    background-color: none; /* Optional background color */
+    width: 100px;
+    height: 30px;      /* Width to fit the content */
+    
+  }
+  
+  /* Styling for the X and O elements */
+  .playerturn .x {
+    font-size: 1em;          /* Large font size for visibility */
+    font-weight: bold;       /* Make the font bold */
+    text-align: center;  
+    
+  }
+  #xdiv
+  {
+    padding-right: 10px;
+  }
+  #odiv
+  {
+    padding-left: 10px;
+  }
+.boardplate
+{
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 100px -10px 100px 10px;
+    
+    /* padding: 50px; */
+}
+.gameboard
+{
+    /* border: 1px solid #000; */
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 15px;
+    margin: 100px ;
+    margin-top: -100px;
+    /* margin-bottom: 20px; */
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 3px;
+    background: url(bg_box.jpg);
+    /* background-color: #fff; */
+    border: 2px solid #faf8f8;
+    border-radius: 18px;
+    box-shadow:10px 10px 10px #550000  ;
+    font-size: 3em;
+    cursor: pointer;
+}
+.message
+{
+    justify-content: center;
+    align-items: center;
+    padding: -50px -30px 10px 30px;
+    max-width: 100%;
+
+}
+#results
+{
+    margin-top: -30px;
+    margin-left: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    font-weight: 200;
+}
