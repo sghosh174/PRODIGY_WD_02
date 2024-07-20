@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Ojuju:wght@200..800&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
+    <link rel="stylesheet" href="styling.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="whole">
+        <div class="text">
+            <h1>Tic Tac Toe</h1>
+            <div class="intro">
+                <p style="font-family: 'Fahkwang';font-size: larger;">There will be two players- <br>Player - X <br>Player - O <br>The player who
+                is the first to get their symbol in three boxes in a row, wins.</p>
+            </div>
+            <div class="letsplay"><p style="font-family: 'Fahkwang';font-size: larger;">Let's play!!!</p></div>
+            <div class="playbutton">
+                <button id="btn">Play</button>
+            </div>
+            
+        </div>
+
+        <div class="boardplate">
+            <div class="playerbox">
+                <p style="font-family: 'Fahkwang';font-weight: 600;font-size: larger;">Turn of :</p>
+                <div class="playerturn">
+                    <div class="x" id="xdiv">X</div>
+                    <div class="x" id="odiv">O</div>
+                </div>
+                <div class="bg"></div>
+            </div>
+            <div class="gameboard">
+                <div class="box" id="1">X</div>
+                <div class="box" id="2">O</div>
+                <div class="box" id="3">X</div>
+                <div class="box" id="4">O</div>
+                <div class="box" id="5">X</div>
+                <div class="box" id="6">O</div>
+                <div class="box" id="7">X</div>
+                <div class="box" id="8">O</div>
+                <div class="box" id="9">X</div>
+            </div>   
+            <div class="message">
+                <h2 id="results"></h2>
+                <!-- <button>Play again</button> -->
+            </div>        
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
